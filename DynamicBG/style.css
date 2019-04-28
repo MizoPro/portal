@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    font: normal normal 30px Lato, Tahoma, sans-serif;
+    color: #e7e77c;
+    text-shadow: 0 0 5px #3f401e;
+}
+
+@-webkit-keyframes bg-animation {
+    0% {
+        background-position-x: left;
+        background-position-y: top;
+    }
+    100% {
+        background-position-x: right;
+        background-position-y: bottom;
+    }
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position-x: left;
+        background-position-y: top;
+    }
+    100% {
+        background-position-x: right;
+        background-position-y: bottom;
+    }
+}
+
+body {
+    background-image: url("bg.jpg");
+    animation-name: bg-animation;
+    background-repeat: repeat;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+}
